@@ -1,4 +1,4 @@
-<h1 align="center">Электронный дегустатор кофе ☕</a></h1>
+<h1 align="center">Электронный дегустатор кофе ☕</h1>
 
 <p align="center">
   <img align="center" src="https://github.com/RodionGolovinsky/coffee_tester/blob/d2d83ccafb63ad913526be8c35c045a9f4025586/demo_app/media/picture1.jpg" height="60", class="center"/>
