@@ -7,6 +7,5 @@
 <h4> <b> Чтобы запустить программу необходимо: </b><h4>
 <p>Установите все необходимые бибилиотеки - <code>pip install -r requirements.txt</code></p>
 <p>Запустите веб-интерфейс<code>streamlit run web.py</code></p>
-<h1><img src="https://github.com/RodionGolovinsky/coffee_tester/blob/main/demo_app/media/screencast.gif" height="300"/></h1>
 ![]([https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://github.com/RodionGolovinsky/coffee_tester/blob/main/demo_app/media/screencast.gif)https://github.com/RodionGolovinsky/coffee_tester/blob/main/demo_app/media/screencast.gif)
 
