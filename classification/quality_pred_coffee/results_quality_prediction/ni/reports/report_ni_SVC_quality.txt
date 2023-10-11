@@ -1,0 +1,15 @@
+Accuracy for easy cross_validation for model SVC: 0.67 (+/- 0.30)
+GridSearch - 2023-08-29 13:52:08.893968Preprocessor - MinMaxScaler
+Classification report for SVC: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+         bad       0.64      0.78      0.70         9
+        good       0.75      0.60      0.67        10
+
+    accuracy                           0.68        19
+   macro avg       0.69      0.69      0.68        19
+weighted avg       0.70      0.68      0.68        19
+Best model parameters: 
+{'C': 1.0, 'gamma': 0.001, 'kernel': 'rbf'}
+

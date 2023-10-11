@@ -1,0 +1,47 @@
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.40 (+/- 0.19)GridSearch - 2023-08-27 13:44:15.444780Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.12      0.33      0.18         3
+         low       1.00      0.17      0.29         6
+      middle       0.44      0.44      0.44         9
+
+    accuracy                           0.33        18
+   macro avg       0.52      0.31      0.30        18
+weighted avg       0.58      0.33      0.35        18
+Best model parameters: 
+{'ccp_alpha': 0.01, 'criterion': 'entropy', 'max_depth': 9, 'max_features': 22}
+
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.49 (+/- 0.15)
+GridSearch - 2023-08-27 13:50:22.413580Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00         3
+         low       0.25      0.17      0.20         6
+      middle       0.29      0.22      0.25         9
+
+    accuracy                           0.17        18
+   macro avg       0.18      0.13      0.15        18
+weighted avg       0.23      0.17      0.19        18
+Best model parameters: 
+{'ccp_alpha': 0.001, 'criterion': 'entropy', 'max_depth': 8, 'max_features': 1}
+
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.40 (+/- 0.19)
+GridSearch - 2023-08-31 20:41:01.008365Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00         3
+         low       0.67      0.33      0.44         6
+      middle       0.60      0.67      0.63         9
+
+    accuracy                           0.44        18
+   macro avg       0.42      0.33      0.36        18
+weighted avg       0.52      0.44      0.46        18
+Best model parameters: 
+{'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 10}
+

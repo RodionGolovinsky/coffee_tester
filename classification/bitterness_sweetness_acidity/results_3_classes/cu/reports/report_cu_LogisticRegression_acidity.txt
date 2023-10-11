@@ -1,0 +1,16 @@
+Accuracy for easy cross_validation for model LogisticRegression: 0.48 (+/- 0.05)
+GridSearch - 2023-08-31 23:49:47.571008Preprocessor - MinMaxScaler
+Classification report for LogisticRegression: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00         3
+         low       0.00      0.00      0.00         6
+      middle       0.50      1.00      0.67         9
+
+    accuracy                           0.50        18
+   macro avg       0.17      0.33      0.22        18
+weighted avg       0.25      0.50      0.33        18
+Best model parameters: 
+{'C': 0.01, 'max_iter': 100, 'penalty': 'l1', 'solver': 'saga'}
+

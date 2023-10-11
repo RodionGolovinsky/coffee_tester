@@ -1,0 +1,55 @@
+Grid Search for catboost quality, 2023-09-11 23:00:43.293244
+Program runtime: 2.38
+Classification_report:
+              precision    recall  f1-score   support
+
+         bad       0.58      0.78      0.67         9
+        good       0.71      0.50      0.59        10
+
+    accuracy                           0.63        19
+   macro avg       0.65      0.64      0.63        19
+weighted avg       0.65      0.63      0.63        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 1, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 1, 'iterations': 12, 'learning_rate': 0.05}
+Grid Search for catboost quality, 2023-09-11 23:45:54.222618
+Preprocessor - StandardScaler
+Program runtime: 2682.92
+Classification_report:
+              precision    recall  f1-score   support
+
+         bad       0.89      0.89      0.89         9
+        good       0.90      0.90      0.90        10
+
+    accuracy                           0.89        19
+   macro avg       0.89      0.89      0.89        19
+weighted avg       0.89      0.89      0.89        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 5, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 15, 'iterations': 2500, 'learning_rate': 0.05}
+Grid Search for catboost quality, 2023-09-12 10:01:39.526121
+Preprocessor - MinMaxScaler
+Program runtime: 3606.59
+Classification_report:
+              precision    recall  f1-score   support
+
+         bad       0.89      0.89      0.89         9
+        good       0.90      0.90      0.90        10
+
+    accuracy                           0.89        19
+   macro avg       0.89      0.89      0.89        19
+weighted avg       0.89      0.89      0.89        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 5, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 15, 'iterations': 1000, 'learning_rate': 0.05}
+Grid Search for catboost quality, 2023-09-12 10:40:42.386203
+Preprocessor - MinMaxScaler
+Program runtime: 2222.04
+Classification_report:
+              precision    recall  f1-score   support
+
+         bad       0.89      0.89      0.89         9
+        good       0.90      0.90      0.90        10
+
+    accuracy                           0.89        19
+   macro avg       0.89      0.89      0.89        19
+weighted avg       0.89      0.89      0.89        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 5, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 15, 'iterations': 250, 'learning_rate': 0.05}

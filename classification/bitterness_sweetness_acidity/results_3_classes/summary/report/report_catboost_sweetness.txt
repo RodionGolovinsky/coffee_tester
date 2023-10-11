@@ -1,0 +1,27 @@
+Grid Search for catboost sweetness, 2023-09-08 17:37:50.405416
+Program runtime: 6.42
+Classification_report:
+              precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00        12
+         low       0.68      0.57      0.62        23
+      middle       0.63      0.89      0.74        38
+
+    accuracy                           0.64        73
+   macro avg       0.44      0.49      0.45        73
+weighted avg       0.54      0.64      0.58        73
+Best params:
+{'nan_mode': 'Min', 'gpu_ram_part': 0.95, 'eval_metric': 'MultiClass', 'iterations': 234, 'leaf_estimation_method': 'Newton', 'observations_to_bootstrap': 'TestOnly', 'od_pval': 0, 'grow_policy': 'SymmetricTree', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'devices': '-1', 'eval_fraction': 0, 'pinned_memory_bytes': '104857600', 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 1, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'gpu_cat_features_storage': 'GpuRam', 'fold_size_loss_normalization': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.4000000059604645, 'use_best_model': False, 'meta_l2_frequency': 0, 'od_wait': 500, 'class_names': [0, 1, 2], 'random_seed': 0, 'depth': 1, 'border_count': 128, 'min_fold_size': 100, 'data_partition': 'DocParallel', 'classes_count': 0, 'auto_class_weights': 'None', 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'min_data_in_leaf': 1, 'add_ridge_penalty_to_loss_function': False, 'loss_function': 'MultiClass', 'learning_rate': 0.05000000074505806, 'meta_l2_exponent': 1, 'score_function': 'Cosine', 'task_type': 'GPU', 'leaf_estimation_iterations': 1, 'bootstrap_type': 'Poisson', 'max_leaves': 2}Grid Search for catboost sweetness, 2023-09-09 00:17:24.172881
+Program runtime: 23856.28
+Classification_report:
+              precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00        12
+         low       0.68      0.57      0.62        23
+      middle       0.63      0.89      0.74        38
+
+    accuracy                           0.64        73
+   macro avg       0.44      0.49      0.45        73
+weighted avg       0.54      0.64      0.58        73
+Best params:
+{'nan_mode': 'Min', 'gpu_ram_part': 0.95, 'eval_metric': 'MultiClass', 'iterations': 2500, 'leaf_estimation_method': 'Newton', 'observations_to_bootstrap': 'TestOnly', 'od_pval': 0, 'grow_policy': 'SymmetricTree', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'devices': '-1', 'eval_fraction': 0, 'pinned_memory_bytes': '104857600', 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 1, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'gpu_cat_features_storage': 'GpuRam', 'fold_size_loss_normalization': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.4000000059604645, 'use_best_model': False, 'meta_l2_frequency': 0, 'od_wait': 500, 'class_names': [0, 1, 2], 'random_seed': 0, 'depth': 1, 'border_count': 128, 'min_fold_size': 100, 'data_partition': 'DocParallel', 'classes_count': 0, 'auto_class_weights': 'None', 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'min_data_in_leaf': 1, 'add_ridge_penalty_to_loss_function': False, 'loss_function': 'MultiClass', 'learning_rate': 0.004999999888241291, 'meta_l2_exponent': 1, 'score_function': 'Cosine', 'task_type': 'GPU', 'leaf_estimation_iterations': 1, 'bootstrap_type': 'Poisson', 'max_leaves': 2}

@@ -1,0 +1,62 @@
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.38 (+/- 0.30)GridSearch - 2023-08-27 13:42:19.072467Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.00      0.00      0.00         3
+         low       0.80      0.67      0.73         6
+      middle       0.62      0.89      0.73         9
+
+    accuracy                           0.67        18
+   macro avg       0.47      0.52      0.48        18
+weighted avg       0.57      0.67      0.61        18
+Best model parameters: 
+{'ccp_alpha': 0.1, 'criterion': 'gini', 'max_depth': 5, 'max_features': 'sqrt'}
+
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.38 (+/- 0.19)GridSearch - 2023-08-27 13:43:53.913147Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.67      0.67      0.67         3
+         low       0.80      0.67      0.73         6
+      middle       0.70      0.78      0.74         9
+
+    accuracy                           0.72        18
+   macro avg       0.72      0.70      0.71        18
+weighted avg       0.73      0.72      0.72        18
+Best model parameters: 
+{'ccp_alpha': 0.01, 'criterion': 'gini', 'max_depth': 10, 'max_features': 78}
+
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.44 (+/- 0.20)
+GridSearch - 2023-08-27 13:50:00.865452Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.25      0.33      0.29         3
+         low       1.00      0.50      0.67         6
+      middle       0.55      0.67      0.60         9
+
+    accuracy                           0.56        18
+   macro avg       0.60      0.50      0.52        18
+weighted avg       0.65      0.56      0.57        18
+Best model parameters: 
+{'ccp_alpha': 0.1, 'criterion': 'gini', 'max_depth': 8, 'max_features': 64}
+
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.47 (+/- 0.19)
+GridSearch - 2023-08-31 20:40:51.232868Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.33      0.33      0.33         3
+         low       0.50      0.67      0.57         6
+      middle       0.71      0.56      0.63         9
+
+    accuracy                           0.56        18
+   macro avg       0.52      0.52      0.51        18
+weighted avg       0.58      0.56      0.56        18
+Best model parameters: 
+{'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 6, 'min_samples_split': 2}
+

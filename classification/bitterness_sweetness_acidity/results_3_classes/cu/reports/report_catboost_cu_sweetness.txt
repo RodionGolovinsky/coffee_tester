@@ -1,0 +1,14 @@
+Grid Search for catboost sweetness, 2023-09-11 19:47:38.706570
+Program runtime: 5305.80
+Classification_report:
+              precision    recall  f1-score   support
+
+        high       1.00      0.33      0.50         3
+         low       0.80      0.67      0.73         6
+      middle       0.67      0.89      0.76         9
+
+    accuracy                           0.72        18
+   macro avg       0.82      0.63      0.66        18
+weighted avg       0.77      0.72      0.71        18
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 4, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 1, 'iterations': 2500, 'learning_rate': 0.05}

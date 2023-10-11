@@ -1,0 +1,16 @@
+Accuracy for easy cross_validation for model MLPClassifier: 0.53 (+/- 0.05)
+GridSearch - 2023-08-31 19:08:51.375625Preprocessor - MinMaxScaler
+Classification report for MLPClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+        high       0.25      0.33      0.29         3
+         low       0.33      0.17      0.22         6
+      middle       0.58      0.70      0.64        10
+
+    accuracy                           0.47        19
+   macro avg       0.39      0.40      0.38        19
+weighted avg       0.45      0.47      0.45        19
+Best model parameters: 
+{'activation': 'relu', 'alpha': 0.001, 'hidden_layer_sizes': (50, 50), 'learning_rate': 'constant', 'solver': 'adam'}
+

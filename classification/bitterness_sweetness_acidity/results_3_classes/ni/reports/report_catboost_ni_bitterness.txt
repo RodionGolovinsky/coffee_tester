@@ -1,0 +1,14 @@
+Grid Search for catboost bitterness, 2023-09-11 18:03:42.933919
+Program runtime: 4541.53
+Classification_report:
+              precision    recall  f1-score   support
+
+        high       1.00      0.60      0.75         5
+         low       0.67      0.89      0.76         9
+      middle       0.75      0.60      0.67         5
+
+    accuracy                           0.74        19
+   macro avg       0.81      0.70      0.73        19
+weighted avg       0.78      0.74      0.73        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 5, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 1, 'iterations': 2500, 'learning_rate': 0.05}

@@ -1,0 +1,15 @@
+Accuracy for easy cross_validation for model DecisionTreeClassifier: 0.53 (+/- 0.21)
+GridSearch - 2023-08-29 13:24:00.815701Preprocessor - MinMaxScaler
+Classification report for DecisionTreeClassifier: 
+ Best estimator metrics: 
+               precision    recall  f1-score   support
+
+         bad       0.60      0.67      0.63         9
+        good       0.62      0.56      0.59         9
+
+    accuracy                           0.61        18
+   macro avg       0.61      0.61      0.61        18
+weighted avg       0.61      0.61      0.61        18
+Best model parameters: 
+{'criterion': 'entropy', 'max_depth': None, 'max_features': 'log2', 'min_samples_leaf': 1, 'min_samples_split': 5}
+

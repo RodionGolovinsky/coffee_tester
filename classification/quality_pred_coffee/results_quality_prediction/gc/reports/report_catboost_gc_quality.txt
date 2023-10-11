@@ -1,0 +1,13 @@
+Grid Search for catboost quality, 2023-09-12 02:20:23.214384
+Program runtime: 1742.45
+Classification_report:
+              precision    recall  f1-score   support
+
+         bad       0.55      0.67      0.60         9
+        good       0.62      0.50      0.56        10
+
+    accuracy                           0.58        19
+   macro avg       0.59      0.58      0.58        19
+weighted avg       0.59      0.58      0.58        19
+Best params:
+{'task_type': 'GPU', 'bootstrap_type': 'Poisson', 'subsample': 0.4, 'depth': 3, 'od_wait': 500, 'verbose': 250, 'l2_leaf_reg': 1, 'iterations': 2500, 'learning_rate': 0.05}
