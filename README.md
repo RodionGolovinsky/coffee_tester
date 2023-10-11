@@ -8,6 +8,7 @@
 <p>Установите все необходимые бибилиотеки - <code>pip install -r requirements.txt</code></p>
 <p>Запустите веб-интерфейс<code>streamlit run web.py</code></p>
 <p align="center">
-  <img src="https://github.com/RodionGolovinsky/coffee_tester/blob/d2d83ccafb63ad913526be8c35c045a9f4025586/demo_app/media/screencast.gif">
+  <img src="https://github.com/RodionGolovinsky/coffee_tester/blob/03b2306127358197a459069df0c0cf83bcd320b7/demo_app/media/screencast.gif">
 </p>
 
+![](https://github.com/RodionGolovinsky/coffee_tester/blob/main/demo_app/media/screencast.gif)
