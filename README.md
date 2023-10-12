@@ -6,7 +6,7 @@
 
 
 Проект, объединяющий подходы, связанные с электрохимическим анализом и применением методов машинного обучения для определения вкусовых характеристик и качества кофе.
-##  Запуск программы ##
+##  Usage ##
 Сделайте локальную копию репозитория
 ```bash
 git clone https://github.com/RodionGolovinsky/coffee_tester.git
@@ -38,9 +38,11 @@ pip install -r requirements.txt
 ```
 Запустите веб-интерфейс 
 ```bash
-streamlit run web.py
+python -m streamlit run web.py
 ```
 <p align="center">
     <img width="900" src="models/media/screencast.gif">
 </p>
 
+## Acknowledgment ## 
+This project was carried out with the support of the Blue Sky Research grant. 
