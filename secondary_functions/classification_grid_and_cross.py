@@ -71,6 +71,6 @@ def classification(target_names, path_dataset, preprocessor, model, params_grid,
                         open(os.path.join(models_path, filename_model), 'wb'))
 
 
-path_dataset = '/classification/dataset_3_classes'
+path_dataset = '/training/dataset_3_classes'
 
 target_names = ['Интенсивность_горечи', 'Интенсивность_сладости', 'Интенсивность_кислотности']
