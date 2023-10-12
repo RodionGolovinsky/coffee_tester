@@ -1,6 +1,6 @@
 <h1 align="center">Электронный дегустатор кофе ☕</h1>
 <img align="center"
-  src="demo_app/media/picture1.jpg"
+  src="models/media/picture1.jpg"
   alt="Coffee process"
   style="display: inline-block; margin: 0 auto; max-width: 1000px">
 
@@ -15,7 +15,7 @@
 <p>Установите все необходимые бибилиотеки - <code>pip install -r requirements.txt</code></p>
 <p>Запустите веб-интерфейс <code>streamlit run web.py</code></p>
 <img align="center"
-  src="demo_app/media/screencast.gif"
+  src="models/media/screencast.gif"
   alt="Coffee process"
   style="display: inline-block; margin: 0 auto; max-width: 1000px">
 

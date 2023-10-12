@@ -2,14 +2,14 @@ import os
 import sys
 import time
 from datetime import datetime
-
+# TODO: Describe or change
 sys.path.append('/secondary_functions')
 import pandas as pd
 from catboost import CatBoostClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
-from paths import get_project_path
+from src.utils.paths import get_project_path
 
 names_in_english = {'Интенсивность_горечи': 'bitterness', 'Интенсивность_сладости': 'sweetness',
                     'Интенсивность_кислотности': 'acidity', 'quality': 'quality'}
@@ -55,6 +55,8 @@ grid = {
     'early_stopping_rounds': [500],
     'verbose': [500]
 }
+
+# TODO: Paths!
 file2 = 'data/datasets_classification/dataset_3_classes/gc_for_classification.csv'
 catboost_grid('Интенсивность_сладости',
                   CatBoostClassifier(task_type="GPU", bootstrap_type='Poisson', subsample=0.4),

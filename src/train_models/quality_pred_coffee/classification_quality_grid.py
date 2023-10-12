@@ -1,20 +1,19 @@
-import numpy as np
+from catboost import CatBoostClassifier
+from colorama import Fore
 from sklearn import svm
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.tree import DecisionTreeClassifier
-from catboost import CatBoostClassifier
 from xgboost import XGBClassifier
-from colorama import init, Fore
 
-from secondary_functions.classification_grid_and_cross import classification
+from src.secondary_functions import classification
 
-path_dataset = '/training/datasets_classification/dataset_3_classes'
-
-target_names = ['Интенсивность_горечи', 'Интенсивность_сладости', 'Интенсивность_кислотности']
+# TODO: PATHS!
+path_dataset = '/train_models/datasets_classification/dataset_good_bad_coffee'
+target_names = ['quality']
+results_dir = '/train_models/results/results_quality_prediction'
 preprocessor = MinMaxScaler()
-results_dir = '/training/results/results_3_classes'
 
 mlp = MLPClassifier(max_iter=1000, random_state=42)
 parameters_mlp = {'hidden_layer_sizes': [(50,), (100,), (50, 50), (100, 50)],
@@ -49,14 +48,14 @@ parameters_catboost = {'learning_rate': [0.03, 0.1, 0.001],
                        'l2_leaf_reg': [1, 3, 5, 7, 9],
                        'iterations': [*list(range(10, 300, 80))]}
 
-xgb_model = XGBClassifier(tree_method='gpu_hist', enable_categorical=True)
+xgb_model = XGBClassifier(tree_method='gpu_hist')
 parameters_xgb = {
     'max_depth': range(2, 100, 2),
     'n_estimators': range(60, 200, 30),
     'learning_rate': [0.1, 0.01, 0.05, 0.001]
 }
-models = [mlp, decision_tree_model, log_reg, svc]
-params = [parameters_mlp, parameters_tree, parameters_log, parameters_svc]
+models = [mlp, decision_tree_model, log_reg, svc, catboost_model, xgb_model]
+params = [parameters_mlp, parameters_tree, parameters_log, parameters_svc, parameters_catboost, parameters_xgb]
 for model, parm in zip(models, params):
-    print(Fore.MAGENTA + f'{model.__class__.__name__}' )
+    print(Fore.MAGENTA + f'{model.__class__.__name__}')
     classification(target_names, path_dataset, preprocessor, model, parm, results_dir)

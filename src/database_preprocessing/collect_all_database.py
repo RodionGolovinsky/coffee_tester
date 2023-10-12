@@ -1,7 +1,8 @@
-from secondary_functions.convert_data_to_csv import convert_to_csv_from_edf
-from secondary_functions.get_summery_tables import get_summery_tables
-from secondary_functions.organize_files_into_folders import organize_files_into_folders
+from src.secondary_functions.convert_data_to_csv import convert_to_csv_from_edf
+from src.secondary_functions.get_summery_tables import get_summery_tables
+from src.secondary_functions.organize_files_into_folders import organize_files_into_folders
 
+# TODO: Change paths in all file!
 # use it to sort data to specific folders
 target_paths = {"cu": '/home/rodion/PycharmProjects/coffee/data/clear_data/every_electrode/cu',
                 "ni": '/home/rodion/PycharmProjects/coffee/data/clear_data/every_electrode/ni',

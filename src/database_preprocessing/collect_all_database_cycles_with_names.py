@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from secondary_functions.concat_id_number_of_sample import concat_id_number_of_sample
-from secondary_functions.convet_data_to_csv_cycles import convert_to_csv_from_edf_cycles
+from src.secondary_functions.concat_id_number_of_sample import concat_id_number_of_sample
+from src.secondary_functions.convet_data_to_csv_cycles import convert_to_csv_from_edf_cycles
 
 
 def collect_names_for_cycles_database(path_cycles, path_coffee_names, path_id_and_numbers,
@@ -26,6 +26,7 @@ def collect_names_for_cycles_database(path_cycles, path_coffee_names, path_id_an
                     new_name = file.split('.csv')[0] + '_with_names.csv'
                     current_table.to_csv(os.path.join(current_dir, new_name), index=False)
 
+# TODO: Change paths in all file!
 path_cycles = '/data/clear_data/by_cycles'
 path_coffee_names = '/data/clear_data/coffee_names.csv'
 path_id_and_numbers = '/data/clear_data/id_and_numberOfSample.csv'

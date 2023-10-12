@@ -1,7 +1,7 @@
 import os
 import pandas as pd
-from secondary_functions.concat_id_number_of_sample import concat_id_number_of_sample
-from paths import path_coffe_names, path_id_and_number, path_all_data, path_all_data_with_names
+from src.secondary_functions.concat_id_number_of_sample import concat_id_number_of_sample
+from src.utils.paths import path_coffe_names, path_id_and_number, path_all_data, path_all_data_with_names
 
 def concat_name_id_number_of_sample(path_coffee_names, path_id_and_numbers, path_all_data, path_all_data_with_names,
                                     column_for_merge='number_of_sample'):

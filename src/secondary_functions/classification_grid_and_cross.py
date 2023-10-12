@@ -10,7 +10,7 @@ from tqdm import tqdm
 from colorama import init, Fore
 from colorama import Style
 
-from secondary_functions.get_X_y_list import get_X_y_list
+from src.secondary_functions.get_X_y_list import get_X_y_list
 
 names_in_english = {'Интенсивность_горечи': 'bitterness',
                     'Интенсивность_сладости': 'sweetness',
@@ -43,18 +43,16 @@ def classification(target_names, path_dataset, preprocessor, model, params_grid,
             grid = GridSearchCV(model, params_grid, cv=5, verbose=False)
             grid.fit(X_train, y_train.values.ravel())
             best_model = grid.best_estimator_
-            reports_path = results_dir + os.sep + material + os.sep + 'reports'
-            models_path = results_dir + os.sep + material + os.sep + 'models'
-            existence_reports = os.path.exists(reports_path)
-            existence_models = os.path.exists(models_path)
-            if existence_reports:
-                pass
-            else:
+
+            reports_path = os.path.join(results_dir, material, 'report')
+            models_path = os.path.join(results_dir, material, 'models')
+
+            if not os.path.exists(reports_path):
                 os.makedirs(reports_path)
-            if existence_models:
-                pass
-            else:
+
+            if not os.path.exists(models_path):
                 os.makedirs(models_path)
+
             with open(os.path.join(reports_path,
                                    f"report_{material}_{model.__class__.__name__}_{names_in_english[target]}.txt"),
                       "a") as file:
@@ -70,7 +68,7 @@ def classification(target_names, path_dataset, preprocessor, model, params_grid,
             pickle.dump(best_model,
                         open(os.path.join(models_path, filename_model), 'wb'))
 
-
-path_dataset = '/training/dataset_3_classes'
+# TODO: Paths!
+path_dataset = '/train_models/dataset_3_classes'
 
 target_names = ['Интенсивность_горечи', 'Интенсивность_сладости', 'Интенсивность_кислотности']

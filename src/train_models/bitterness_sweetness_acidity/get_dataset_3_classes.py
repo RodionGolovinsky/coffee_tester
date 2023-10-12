@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from secondary_functions.load_card import load_card
+from src.secondary_functions.load_card import load_card
 
 
 def get_dataset_for_classification(path_card, path_all_data_with_names, target_columns: list, path_for_dataset):
@@ -30,9 +30,9 @@ def get_dataset_for_classification(path_card, path_all_data_with_names, target_c
         print('Files saved!')
     return True
 
-
+# TODO: PATHS!
 path_card = '/data/clear_data/Дегустация кофе 20.07 - Лист1.csv'
 path_all_data_with_names = '/data/clear_data/all_data_with_names'
 target_columns = ['Интенсивность_кислотности', 'Интенсивность_сладости', 'Интенсивность_горечи']
-path_for_dataset = '/training/datasets_classification/dataset_3_classes'
+path_for_dataset = '/train_models/datasets_classification/dataset_3_classes'
 print(get_dataset_for_classification(path_card, path_all_data_with_names, target_columns, path_for_dataset))
