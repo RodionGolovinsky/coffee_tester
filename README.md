@@ -6,16 +6,41 @@
 
 
 Проект, объединяющий подходы, связанные с электрохимическим анализом и применением методов машинного обучения для определения вкусовых характеристик и качества кофе.
-<h4> <b> Для запуска программы: </b><h4>
-<p> Сделайте локальную копию репозитория <code>git clone https://github.com/RodionGolovinsky/coffee_tester.git</code></p>
-<p> Перейдите в директорию проекта <code> cd путь_к_папке_проекта </code></p>
-<p> Создайте в каталоге проекта новое виртуальное окружение <code> python -m venv venv или python3 -m venv venv</code></p>
-<p> Активируйте виртуальное окружение <code> source venv/bin/activate - для Mac/Linux</code></p>
-<p> <code> venv\Scripts\activate.bat - для Windows</code></p>
-<p>Установите все необходимые бибилиотеки - <code>pip install -r requirements.txt</code></p>
-<p>Запустите веб-интерфейс <code>streamlit run web.py</code></p>
-<img align="center"
-  src="models/media/screencast.gif"
-  alt="Coffee process"
-  style="display: inline-block; margin: 0 auto; max-width: 1000px">
+##  Запуск программы ##
+Сделайте локальную копию репозитория
+```bash
+git clone https://github.com/RodionGolovinsky/coffee_tester.git
+```
+Перейдите в директорию проекта 
+```bash
+cd путь_к_папке_проекта
+```
+Создайте в каталоге проекта новое виртуальное окружение 
+```bash
+python -m venv venv
+```
+или 
+```bash
+python3 -m venv venv
+```
+Активируйте виртуальное окружение 
+- Mac/Linux
+```bash
+source venv/bin/activate
+```
+- Windows
+```bash
+venv\Scripts\activate.bat
+```
+Установите все необходимые бибилиотеки 
+```bash
+pip install -r requirements.txt
+```
+Запустите веб-интерфейс 
+```bash
+streamlit run web.py
+```
+<p align="center">
+    <img width="900" src="models/media/screencast.gif">
+</p>
 

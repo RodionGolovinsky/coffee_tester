@@ -34,17 +34,17 @@ electrode = st.radio(
 current_path = os.getcwd()
 
 electrode = electrode.lower()
-model_path_quality = os.path.join(current_path, f'models/models_quality/catboost_{electrode}.bin')
-model_path_acidity = os.path.join(current_path, f'models/models_taste/catboost_acidity_{electrode}.bin')
-model_path_bitterness = os.path.join(current_path, f'models/models_taste/catboost_bitterness_{electrode}.bin')
-model_path_sweetness = os.path.join(current_path, f'models/models_taste/catboost_sweetness_{electrode}.bin')
+model_path_quality = os.path.join(current_path, 'models', 'models_quality', f'catboost_{electrode}.bin')
+model_path_acidity = os.path.join(current_path, 'models', 'models_taste', f'catboost_acidity_{electrode}.bin')
+model_path_bitterness = os.path.join(current_path,  'models', 'models_taste', f'catboost_bitterness_{electrode}.bin')
+model_path_sweetness = os.path.join(current_path,  'models', 'models_taste', f'catboost_sweetness_{electrode}.bin')
 class_coffee = {0: 'Плохой', 1: 'Хороший'}
 model_quality = CatBoostClassifier().load_model(model_path_quality)
 model_acidity = CatBoostClassifier().load_model(model_path_acidity)
 model_bitterness = CatBoostClassifier().load_model(model_path_bitterness)
 model_sweetness = CatBoostClassifier().load_model(model_path_sweetness)
 X = df['Current'].to_numpy().reshape((1, -1))
-with open('models/scaler.pkl', 'rb') as f:
+with open(f'models{os.sep}scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 X = scaler.transform(X).reshape(-1)
 probability = model_quality.predict_proba(X.reshape((1, -1)))
