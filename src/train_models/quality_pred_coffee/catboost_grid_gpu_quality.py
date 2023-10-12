@@ -1,16 +1,13 @@
-import os
 import time
 from datetime import datetime
 
-import numpy as np
 import pandas as pd
 from catboost import CatBoostClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-from tqdm import tqdm
-from secondary_functions.classification_grid_and_cross import names_in_english
+from src.secondary_functions import names_in_english
 
 
 def catboost_grid(target_col, catboost_model, dataset_path):
@@ -34,7 +31,7 @@ def catboost_grid(target_col, catboost_model, dataset_path):
     best_params = catboost_model.get_params()
 
     with open(
-            f'/home/rodion/PycharmProjects/coffee/training/task/quality_pred_coffee/res/report_catboost_{dataset_path.split("/")[-1].split("_")[0]}_{names_in_english[target_col]}.txt',
+            f'/home/rodion/PycharmProjects/coffee/train_models/task/quality_pred_coffee/res/report_catboost_{dataset_path.split("/")[-1].split("_")[0]}_{names_in_english[target_col]}.txt',
             'a') as f:
         f.write(f'Grid Search for catboost {names_in_english[target_col]}, {datetime.now()}\n')
         f.write(f'Preprocessor - {scaler.__class__.__name__}\n')
@@ -66,5 +63,6 @@ grid = {
 }
 
 # for file in tqdm(os.listdir(root)):
+# TODO: PATHS!
 catboost_grid(target_col, CatBoostClassifier(task_type="GPU", bootstrap_type='Poisson', subsample=0.4),
-              '/training/datasets_classification/dataset_summary_data/all_materials_dataset_quality.csv')
+              '/train_models/datasets_classification/dataset_summary_data/all_materials_dataset_quality.csv')

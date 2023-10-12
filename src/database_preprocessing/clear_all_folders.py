@@ -1,5 +1,5 @@
 import os
-from paths import path_all_data, path_electrodes, path_cycles, path_all_data_with_names, path_all_csv_data
+from src.utils.paths import path_all_data, path_electrodes, path_cycles, path_all_data_with_names, path_all_csv_data
 
 
 def cleaning(*paths):
